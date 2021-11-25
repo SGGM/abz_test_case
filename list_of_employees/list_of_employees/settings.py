@@ -43,6 +43,7 @@ INSTALLED_APPS = [
     'employee_hierarchy',
 
     # Third-party apps
+    'mttp',
 ]
 
 MIDDLEWARE = [
