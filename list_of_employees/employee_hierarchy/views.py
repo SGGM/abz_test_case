@@ -1,3 +1,9 @@
 from django.shortcuts import render
 
-# Create your views here.
+from .models import Employee
+
+
+
+def show_employees(request):
+    context = {'employees': Employee.objects.all()}
+    return render(request, "employee_hierarchy/employees.html", context)
