@@ -2,8 +2,13 @@
 <ul>
     {% recursetree employees %}
         <li>
-            {{ node.name }}
+            <p>Name: {{ node.full_name }}</p>
+            Position: {{ node.position }}
+            Employment date: {{ node.employment_date }}
+            Salary: {{ node.salary }}
+            Manager: {{ node.parent }}
             {% if not node.is_leaf_node %}
+                <div>--------------</div>
                 <ul class="children">
                     {{ children }}
                 </ul>

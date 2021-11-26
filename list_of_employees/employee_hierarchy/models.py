@@ -11,3 +11,6 @@ class Employee(MPTTModel):
     position = models.CharField(max_length=50, null=True)
     employment_date = models.DateField(null=True)
     salary = models.IntegerField(null=True)
+
+    def __str__(self):
+        return self.full_name
