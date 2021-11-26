@@ -44,6 +44,7 @@ INSTALLED_APPS = [
 
     # Third-party apps
     'mptt',
+    'twitter_bootstrap',
 ]
 
 MIDDLEWARE = [
